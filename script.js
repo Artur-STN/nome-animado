@@ -1,5 +1,5 @@
 function dados() {
-    
+
     let nome = document.getElementById('nome')
     let ocupacao = document.getElementById('ocupacao')
 
