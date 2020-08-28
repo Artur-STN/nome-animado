@@ -1,12 +1,11 @@
-function dados() {
+function pegar_dados() {
+    
+    let nome = document.querySelector('.nome-nome-animado')
+    let ocupacao = document.querySelector('.ocupacao-nome-animado')
 
-    let nome = document.getElementById('nome')
-    let ocupacao = document.getElementById('ocupacao')
+    let i_nome = document.getElementById('i_nome')
+    let i_ocupacao = document.getElementById('i_ocupacao')
 
-    let dado_nome = document.getElementById('i_nome')
-    let dado_ocupacao = document.getElementById('i_ocupacao')
-
-    nome.innerHTML = dado_nome.value
-    ocupacao.innerHTML = dado_ocupacao.value
-
+    nome.innerHTML = i_nome.value
+    ocupacao.innerHTML = i_ocupacao.value
 }

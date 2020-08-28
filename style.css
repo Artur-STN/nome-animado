@@ -6,32 +6,17 @@
 @keyframes anima {
     0% {
         width: 0;
-        visibility: visible;
-    }
-
-    100% {
-        width: 35rem;
-    }
-}
-
-@keyframes anima-p {
-    0% {
+        transform: translateX(-100%);
         opacity: 0;
-        font-size: 0;
+    }
+
+    50% {
+        opacity: 0;
     }
 
     100% {
+        transform: translateX(0%);
         opacity: 1;
-    }
-}
-
-@keyframes anima-img {
-    0% {
-        width: 0;
-    }
-
-    100% {
-        width: 5rem;
     }
 }
 
@@ -47,37 +32,68 @@ body {
 .nome-animado {
     animation: anima 1s;
 
-    background: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
-    font-family: 'O';
-    font-size: 2rem;
-
-    text-align: left;
-
-    border: 1px solid;
-    border-radius: 5px;
+    width: 550px;
 
     margin: auto;
     margin-top: 5rem;
     margin-bottom: 2rem;
-
-    width: 35rem;
-
-    display: flex;
 }
 
-.nome-animado p {
-    animation: anima-p 0.5s;
+.imagem-nome-animado {
+    animation: anima 2s;
+    
+    background: rgb(255, 255, 255);
+
+    border: 1px solid;
+    border-radius: 5px;
+
+    width: 6rem;
+    height: 6rem;
+
+    padding: 0.3rem;
 }
 
-img {
-    animation: anima-img 2s;
+.dados{
+    font-family: 'O';
+    font-size: 2rem;
 
-    width: 5rem;
-    height: 5rem;
+    margin-left: 1rem;
+}
 
-    margin: 1rem;
-    margin-right: 3rem;
+.nome-nome-animado{
+    animation: anima 1s;
+    background: white;
+    
+    border: solid 1px black;
+    border-radius: 5px;
+    
+    width: 30rem;
+    height: 2.5rem;
+
+    margin-bottom: 0.3rem;
+
+    padding: 1rem;
+    padding-top: 0;
+    padding-bottom: 0.5rem;
+}
+
+.ocupacao-nome-animado{
+    animation: anima 1.5s;
+    background: white;
+    
+    border: solid 1px black;
+    border-radius: 5px;
+    
+    width: 30rem;
+    height: 2.5rem;
+
+    padding: 1rem;
+    padding-top: 0;
+    padding-bottom: 0.5rem;
 }
 
 .i_dados {
@@ -85,7 +101,7 @@ img {
     align-items: center;
     justify-content: space-between;
 
-    width: 550px;
+    width: 700px;
 
     margin: auto;
 }
@@ -100,7 +116,7 @@ img {
     font-family: 'O';
     font-size: 2rem;
 
-    width: 300px;
+    width: 350px;
 
     text-align: center;
 
@@ -125,13 +141,6 @@ input:focus:-ms-input-placeholder {
     color: transparent;
 }
 
-.botao {
-    margin: auto;
-    margin-top: 2rem;
-
-    width: 500px;
-}
-
 #botao {
     background: rgb(0, 183, 255);
     color: white;
@@ -146,6 +155,8 @@ input:focus:-ms-input-placeholder {
 
     width: 250px;
 
+    margin-bottom: 2rem;
+
     padding: 1rem;
 
     text-align: center;
@@ -157,4 +168,32 @@ input:focus:-ms-input-placeholder {
     background: rgb(0, 131, 253);
 
     border-color: black;
+}
+
+label[for="bt_menu"] {
+    background-color: #222;
+    color: rgb(255, 255, 255);
+
+    font-family: Arial;
+    font-size: 30px;
+
+    text-align: center;
+
+    cursor: pointer;
+
+    width: 50px;
+    height: 50px;
+
+    padding: 5px;
+}
+
+label[for="bt_menu"]:hover {
+
+    background-color: #000000;
+    color: white;
+
+}
+
+#bt_menu:checked~.nome-animado {
+    animation: anima 1s;
 }
