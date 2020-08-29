@@ -18,17 +18,21 @@
 
 <body>
 
-    <div class="nome-animado">
+    <div class="principal">
+    
+        <div class="nome-animado">
 
-        <img src="imagens/logo adv 300px.png" alt="Logo Adventista" class="imagem-nome-animado">
+            <img src="imagens/logo adv 300px.png" alt="Logo Adventista" class="imagem-nome-animado">
+        
+            <div class="dados">
 
-        <div class="dados">
+                <p class="nome-nome-animado"></p>
+                <p class="ocupacao-nome-animado"></p>
 
-            <p class="nome-nome-animado"></p>
-            <p class="ocupacao-nome-animado"></p>
+            </div>
 
         </div>
-
+    
     </div>
 
     <div class="i_dados">
@@ -43,12 +47,18 @@
 
         <div class="botoes">
 
-            <input type="button" value="Pegar Dados" id="botao" onclick="pegar_dados()">
+            <div class="b_pegar_dados">
 
-            <input type="button" value="Rodar Animação" id="botao">
+                <input type="button" value="Pegar Dados" id="botao_pegar" onclick="pegar_dados()">
+
+            </div>
+    
+            <input type="button" value="Rodar Animação" id="botao-1" onclick="rodar_animacao()">
+            
+            <input type="button" value="Fechar Animação" id="botao-1" onclick="fechar_animacao()">
 
         </div>
-
+        
     </div>
 
 </body>
