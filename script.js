@@ -32,9 +32,9 @@ function fechar_animacao() {
     let nome = document.querySelector('.nome-nome-animado')
     let ocupacao = document.querySelector('.ocupacao-nome-animado')
 
-    img.style.animation = 'fechar 25s'
-    nome.style.animation = 'fechar 25s'
-    ocupacao.style.animation = 'fechar 25s'
+    img.style.animation = 'fechar 120s'
+    nome.style.animation = 'fechar 120s'
+    ocupacao.style.animation = 'fechar 120s'
     
 
 }
