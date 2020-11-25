@@ -15,6 +15,20 @@ function pegar_dados() {
 
 }
 
+function limpar_dados() {
+
+    let nome = document.querySelector('.nome-nome-animado')
+    let ocupacao = document.querySelector('.ocupacao-nome-animado')
+
+    let botao = document.getElementById('botao_pegar')    
+    
+    nome.innerHTML = ''
+    ocupacao.innerHTML = ''
+
+    botao.style.background = 'rgb(0, 36, 70)';
+
+}
+
 function voltar_bg() {
     
     let botao = document.getElementById('botao_pegar')
@@ -39,8 +53,8 @@ function rodar_animacao() {
     let ocupacao = document.querySelector('.ocupacao-nome-animado')
 
     caixa.style.visibility = ''
-
     caixa.style.visibility = 'visible'
+
     img.style.animation = 'anima 1.5s'
     nome.style.animation = 'anima 0.5s'
     ocupacao.style.animation = 'anima 1s'
@@ -56,6 +70,5 @@ function fechar_animacao() {
     img.style.animation = 'fechar 120s'
     nome.style.animation = 'fechar 120s'
     ocupacao.style.animation = 'fechar 120s'
-    
 
 }
